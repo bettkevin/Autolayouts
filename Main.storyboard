@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-w7-XDc">
+                                <rect key="frame" x="20" y="44" width="394" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uE-Dg-LKf" userLabel="FirstButton">
+                                <rect key="frame" x="64.666666666666686" y="334.66666666666669" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in With Facebook" backgroundImage="FB.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-I8-Gri" userLabel="SecondButton">
+                                <rect key="frame" x="64.666666666666686" y="413.66666666666669" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in With Google " backgroundImage="Google.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFC-dk-7G2" userLabel="ThirdButton">
+                                <rect key="frame" x="64.666666666666686" y="492.66666666666674" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in With Email" backgroundImage="Email.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQb-fi-o9I">
+                                <rect key="frame" x="103" y="303.66666666666669" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Squid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-Uy-gWd">
+                                <rect key="frame" x="142.66666666666666" y="233.66666666666666" width="128.99999999999997" height="39.999999999999972"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zfW-I8-Gri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0iL-vz-IX1"/>
+                            <constraint firstItem="zfW-I8-Gri" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CYM-V0-BnU"/>
+                            <constraint firstItem="F9K-w7-XDc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CeN-uZ-b7O"/>
+                            <constraint firstItem="eXm-Uy-gWd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JJ0-Lc-3Gz"/>
+                            <constraint firstAttribute="trailing" secondItem="F9K-w7-XDc" secondAttribute="trailing" id="Noc-ZZ-DMo"/>
+                            <constraint firstItem="2uE-Dg-LKf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3b-a0-i0T"/>
+                            <constraint firstItem="sFC-dk-7G2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SNA-aX-Rj2"/>
+                            <constraint firstItem="F9K-w7-XDc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="StE-qN-uTw"/>
+                            <constraint firstItem="IQb-fi-o9I" firstAttribute="top" secondItem="eXm-Uy-gWd" secondAttribute="bottom" constant="30" id="WbB-p2-3Nm"/>
+                            <constraint firstItem="2uE-Dg-LKf" firstAttribute="top" secondItem="IQb-fi-o9I" secondAttribute="bottom" constant="10" id="aWd-C7-jhr"/>
+                            <constraint firstItem="sFC-dk-7G2" firstAttribute="top" secondItem="zfW-I8-Gri" secondAttribute="bottom" constant="10" id="cma-eb-p1Z"/>
+                            <constraint firstItem="IQb-fi-o9I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9O-aW-1sf"/>
+                            <constraint firstItem="zfW-I8-Gri" firstAttribute="top" secondItem="2uE-Dg-LKf" secondAttribute="bottom" constant="10" id="eNb-qb-6sf"/>
+                            <constraint firstItem="2uE-Dg-LKf" firstAttribute="centerY" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qxh-L4-t5y"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="F9K-w7-XDc" secondAttribute="bottom" id="x25-Oc-I5W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background.jpg" width="414" height="896"/>
+        <image name="Email.png" width="285" height="69"/>
+        <image name="FB.png" width="285" height="69"/>
+        <image name="Google.png" width="285" height="69"/>
+    </resources>
+</document>
